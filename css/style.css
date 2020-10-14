@@ -145,12 +145,19 @@ li:hover {
     font-weight: bold;
     outline: none;
 }
+.btn.active {
+    color: black;
+    background: white;
+}
 
 .btn:hover {
     color: black;
     background: white;
 }
-
+.btn.active:hover {
+    color: white;
+    background: transparent;
+}
 
 .fa-play-circle {
     margin-left: 4px;
