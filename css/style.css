@@ -21,7 +21,7 @@ body {
 .header_logo {
     color: #fff;
     justify-self: start;
-    margin-left: 20px;
+    margin-left: 40px;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
@@ -55,12 +55,17 @@ li:hover {
     background: transparent;
     color: #fff;
     font-size: 20px;
-    font-weight: bold;
 }
 
 .btn-su:hover {
     color: black;
     background: white;
+}
+.menu_icon {
+    display: none;
+    color: white;
+    font-size: 30px;
+    margin: 20px;
 }
 /********header********/
 

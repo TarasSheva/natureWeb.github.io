@@ -1,0 +1,42 @@
+@media screen and (max-width: 700px){
+    ul {
+        display: none;
+    }
+    .menu_icon {
+        display: block;
+    }
+    .fon_container > h1 {
+        padding-top: 80px;
+        font-size: 50px;
+    }
+    .fon_container > p {
+        margin-top: 5px;
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .fon_container > h1 {
+        padding-top: 50px;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .fon_container > p {
+        font-size: 18px;
+    }
+    .hero_btns {
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .fon_container > h1 {
+        padding-top: 20px;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .fon_container > p {
+        font-size: 12px;
+    }
+    .hero_btns {
+        margin-top: 10px;
+    }
+}
