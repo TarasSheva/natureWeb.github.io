@@ -6,6 +6,10 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
 }
+a {
+    color: white;
+    text-decoration: none;
+}
 /********header********/
 .header_container {
     background: linear-gradient(180deg, rgb(186 27 241) 0%, rgb(34 0 80) 100%);
@@ -87,7 +91,7 @@ li:hover {
 }
 .fon_wrap {
     position: relative;
-    max-height: 100vh;
+    max-height: 100%;
     overflow: hidden;
 }
 .fon_wrap:after {
@@ -302,4 +306,10 @@ li:hover {
 .website-rights {
     color: #fff;
     margin-bottom: 16px;
+}
+
+
+/********collection*********/
+.fon_image img {
+    width: 100%;
 }
