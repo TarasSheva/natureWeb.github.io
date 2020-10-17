@@ -1,13 +1,9 @@
 @media screen and (max-width: 800px){
-    .footer-links {
-        padding-top: 2rem;
-    }
-
     .footer-input {
         width: 100%;
     }
 
-    .btn {
+    .input-areas>button {
         width: 100%;
     }
 
@@ -28,6 +24,28 @@
 
     ul {
         display: none;
+        text-align: center;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: blueviolet;
+        margin: 0;
+        padding: 0;
+    }
+    ul > li {
+        padding: 8px 0;
+        border-bottom: 0;
+    }
+    ul>li:hover {
+        border-bottom: 0;
+        opacity: 0.5;
+    }
+    ul li+li {
+        margin-left: 0;
+    }
+    .btn-su {
+        margin: 15px 0;
     }
     .menu_icon {
         display: block;
@@ -45,6 +63,9 @@
     .header_container {
         height: 60px;
     }
+    ul {
+        top: 60px;
+    }
     .fon_container > h1 {
         padding-top: 50px;
         font-size: 40px;
@@ -61,6 +82,9 @@
     .header_container {
         height: 50px;
     }
+    ul {
+        top: 50px;
+    }
     .header_logo {
         margin-left: 20px;
     }
@@ -74,5 +98,12 @@
     }
     .hero_btns {
         margin-top: 10px;
+    }
+}
+
+
+@media (min-width: 700px){
+    ul {
+        display: inline-flex !important;
     }
 }
