@@ -10,3 +10,14 @@ const showMenu = () => {
     }
 };
 btn.addEventListener('click', showMenu);
+
+// переход по ссылке
+
+let btn1 = document.querySelector('#btn1');
+
+const toCollection = () => {
+        document.location.href = 'collection.html';
+};
+if (btn1 !== null) {
+    btn1.addEventListener('click', toCollection);
+}

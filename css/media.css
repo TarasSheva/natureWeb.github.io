@@ -17,6 +17,9 @@
     .footer-link-items {
         margin: 0;
     }
+    .card_item {
+        width: 40%;
+    }
 }
 
 
@@ -78,6 +81,12 @@
         margin-top: 20px;
     }
 }
+@media screen and (max-width: 470px) {
+    .card_item {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 400px) {
     .header_container {
         height: 50px;
