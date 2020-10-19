@@ -323,8 +323,17 @@ li:hover {
 
 
 /********collection*********/
-.fon_image img {
+.coll_wrap {
     width: 100%;
+    height: 100vh;
+
+}
+.coll_image {
+    height: 100%;
+    background-image: url(../img/grand-canyon-sunset.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .cards > h1 {
     text-align: center;
@@ -355,4 +364,18 @@ li:hover {
 .cards_item-img img {
     width: 100%;
     border-radius: 10px 10px 0 0;
+}
+
+/******services*****/
+.ser_wrap {
+    width: 100%;
+    height: 100vh;
+
+}
+.ser_image {
+    height: 100%;
+    background-image: url(../img/dubai.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
