@@ -85,13 +85,13 @@ li:hover {
 .video_media {
     position: absolute;
     width: auto;
-    height: 100vh;
+    height: 120vh;
     top: 0;
     left: 0;
 }
 .fon_wrap {
     position: relative;
-    height: 100vh;
+    height: 120vh;
     overflow: hidden;
 }
 .fon_wrap:after {

@@ -97,6 +97,9 @@
     .header_logo {
         margin-left: 20px;
     }
+    .fon_container > h1 {
+        padding-top: 120px;
+    }
 }
 
 
