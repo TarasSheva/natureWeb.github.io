@@ -12,27 +12,25 @@ const showMenu = () => {
 btn.addEventListener('click', showMenu);
 
 // переход по ссылке
-
-let btn1 = document.querySelector('#btn1');
+const heroBtn = document.querySelector('.hero_btns');
+const btn1 = document.querySelector('.to-video');
+const btn2 = document.querySelector('#btn2');
 
 const toCollection = () => {
         document.location.href = 'collection.html';
 };
-if (btn1 !== null) {
-    btn1.addEventListener('click', toCollection);
-}
+const toVideo = (e) => {
+    e.preventDefault();
 
-const anchors = document.querySelector('.active');
+    const sectionId = btn1.getAttribute('id');
+    console.log(sectionId)
 
-
-    anchors.addEventListener('click', function (e) {
-        e.preventDefault()
-
-        const blockID = anchors.getAttribute('id');
-        console.log(blockID)
-
-        document.querySelector(blockID).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        })
+    document.querySelector(sectionId).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
     })
+};
+if (heroBtn !== null) {
+    btn1.addEventListener('click', toVideo);
+    btn2.addEventListener('click', toCollection)
+}
