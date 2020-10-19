@@ -21,3 +21,18 @@ const toCollection = () => {
 if (btn1 !== null) {
     btn1.addEventListener('click', toCollection);
 }
+
+const anchors = document.querySelector('.active');
+
+
+    anchors.addEventListener('click', function (e) {
+        e.preventDefault()
+
+        const blockID = anchors.getAttribute('id');
+        console.log(blockID)
+
+        document.querySelector(blockID).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
+    })
