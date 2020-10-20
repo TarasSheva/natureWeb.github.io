@@ -340,6 +340,9 @@ li:hover {
     background-repeat: no-repeat;
     background-position: center;
 }
+.cards_wrapper {
+    position: relative;
+}
 .cards > h1 {
     text-align: center;
     margin: 60px 10px;
@@ -370,6 +373,18 @@ li:hover {
     width: 100%;
     border-radius: 10px 10px 0 0;
 }
+
+
+.card_slider {
+    display: none;
+    position: absolute;
+    top: 0;
+}
+
+
+
+
+
 
 /******services*****/
 .ser_wrap {
