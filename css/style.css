@@ -382,17 +382,35 @@ li:hover {
 /*    left: 50%;*/
 /*    transform: translate(-50%, 0);*/
 /*}*/
+/*.slider_wrapp {*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%);*/
+/*    margin: 40px auto;*/
+/*    z-index: 500;*/
+/*}*/
+.slider_fon {
+    background: black;
+    opacity: 0.5;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
 .slider {
-    position: relative;
+    position: fixed;
     max-width: 640px;
     max-height: 480px;
     margin: 50px auto 0;
     user-select: none;
     touch-action: pan-y;
+    z-index: 500;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
 }
-.slider img {
-    poiner-events: none;
-}
+
 .card_slider {
     max-width: 640px;
     max-height: 480px;
