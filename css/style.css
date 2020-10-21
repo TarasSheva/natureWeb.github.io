@@ -375,12 +375,75 @@ li:hover {
 }
 
 
+/*.card_slider {*/
+/*    display: none;*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%, 0);*/
+/*}*/
+.slider {
+    position: relative;
+    width: 640px;
+    height: 480px;
+    margin: 50px auto 0;
+    user-select: none;
+    touch-action: pan-y;
+}
+.slider img {
+    poiner-events: none;
+}
 .card_slider {
-    display: none;
-    position: absolute;
-    top: 0;
+    width: 640px;
+    height: 480px;
+    overflow: hidden;
 }
 
+.card_slider.grab {
+    cursor: grab;
+}
+
+.card_slider.grabbing{
+    cursor: grabbing;
+}
+
+.slider_track {
+    display: flex;
+}
+
+.slides {
+    width: 640px;
+    height: 480px;
+    /* Чтобы слайды не сжимались */
+    flex-shrink: 0;
+    /* Увеличиваем и центрируем цифру внутри слайда */
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+}
+
+.slider_arrows {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.next,
+.prev {
+    background: none;
+    border: none;
+    margin: 0 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+}
+
+.next.disabled,
+.prev.disabled {
+    opacity: .25;
+    pointer-events: none;
+}
 
 
 
