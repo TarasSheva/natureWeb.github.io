@@ -384,8 +384,8 @@ li:hover {
 /*}*/
 .slider {
     position: relative;
-    width: 640px;
-    height: 480px;
+    max-width: 640px;
+    max-height: 480px;
     margin: 50px auto 0;
     user-select: none;
     touch-action: pan-y;
@@ -394,8 +394,8 @@ li:hover {
     poiner-events: none;
 }
 .card_slider {
-    width: 640px;
-    height: 480px;
+    max-width: 640px;
+    max-height: 480px;
     overflow: hidden;
 }
 
@@ -412,8 +412,8 @@ li:hover {
 }
 
 .slides {
-    width: 640px;
-    height: 480px;
+    max-width: 640px;
+    max-height: 480px;
     /* Чтобы слайды не сжимались */
     flex-shrink: 0;
     /* Увеличиваем и центрируем цифру внутри слайда */
