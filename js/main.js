@@ -120,6 +120,9 @@ if (heroBtn !== null) {
 //
 // });
 
+const slider = document.querySelectorAll(".card_item");
+
+const openSlider = document.querySelector('.slider_wrapp');
 
 const sliderShow = () => {
     let slider = document.querySelector('.slider'),
@@ -308,4 +311,11 @@ const sliderShow = () => {
     });
 };
 
-sliderShow();
+[].forEach.call(slider, function (element) {
+    element.onclick = function () {
+        openSlider.style.display = "block";
+        sliderShow();
+    }
+});
+
+

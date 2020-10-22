@@ -21,7 +21,7 @@ a {
     font-size: 24px;
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 100;
 }
 .header_logo {
     color: #fff;
@@ -390,12 +390,19 @@ li:hover {
 /*    margin: 40px auto;*/
 /*    z-index: 500;*/
 /*}*/
+
+.slider_wrapp {
+    display: none;
+}
 .slider_fon {
+    position: fixed;
+    top: 0;
+    left: 0;
     background: black;
     opacity: 0.5;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    z-index: 1;
+    z-index: 450;
 }
 
 .slider {
@@ -448,13 +455,33 @@ li:hover {
 }
 
 .next,
-.prev {
-    background: none;
+.prev,
+.close {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 10px;
+    background: rgba(255,255,255, 0.6);
     border: none;
     margin: 0 10px;
-    font-size: 30px;
+    font-size: 50px;
     cursor: pointer;
     color: black;
+}
+.prev {
+    border-radius: 0 10px 10px 0;
+    left: -10px;
+}
+.next {
+    border-radius: 10px 0 0 10px;
+    right: -10px;
+}
+.close {
+    position: absolute;
+    top: 0;
+    right: -25%;
+    padding: 0 10px;
+    border-radius: 10px;
 }
 
 .next.disabled,
