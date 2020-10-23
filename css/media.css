@@ -99,7 +99,7 @@
     .hero_btns {
         margin-top: 20px;
     }
-    .next, .prev, .close {
+    .next, .prev {
         display: none;
     }
 }
@@ -134,6 +134,9 @@
     }
     .fon_container > h1 {
         padding-top: 120px;
+    }
+    .slider {
+        margin: 140px auto;
     }
     .card_slider {
         width: 320px;
