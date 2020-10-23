@@ -64,6 +64,9 @@
         margin-top: 5px;
         font-size: 24px;
     }
+    .slider {
+        margin: 25px auto;
+    }
     .card_slider {
         width: 430px;
     }
