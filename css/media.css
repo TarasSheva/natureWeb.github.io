@@ -20,10 +20,7 @@
     .card_item {
         width: 40%;
     }
-    .close {
-        top: -30px;
-        right: auto;
-    }
+
 }
 
 
@@ -79,7 +76,9 @@
     .next, .prev, .close {
         font-size: 30px;
     }
-
+    .close {
+        right: -70px;
+    }
 }
 @media screen and (max-width: 500px) {
     .header_container {
@@ -99,8 +98,15 @@
     .hero_btns {
         margin-top: 20px;
     }
+    .slider {
+        margin: 140px auto;
+    }
     .next, .prev {
         display: none;
+    }
+    .close {
+        right: 0;
+        top: -25px;
     }
 }
 @media screen and (max-width: 470px) {
@@ -135,9 +141,7 @@
     .fon_container > h1 {
         padding-top: 120px;
     }
-    .slider {
-        margin: 140px auto;
-    }
+
     .card_slider {
         width: 320px;
     }
