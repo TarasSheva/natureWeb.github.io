@@ -89,14 +89,14 @@ li:hover {
 }
 .video_media {
     position: absolute;
-    width: auto;
-    height: 120vh;
+    width: 100%;
+    height: auto;
     top: 0;
     left: 0;
 }
 .fon_wrap {
     position: relative;
-    height: 120vh;
+    height: auto;
     overflow: hidden;
 }
 .fon_wrap:after {

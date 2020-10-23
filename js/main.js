@@ -126,6 +126,7 @@ const openSlider = document.querySelector('.slider_wrapp');
 
 const sliderShow = () => {
     let slider = document.querySelector('.slider'),
+        closeSlide = slider.querySelector('.close'),
         sliderList = slider.querySelector('.card_slider'),
         sliderTrack = slider.querySelector('.slider_track'),
         slides = slider.querySelectorAll('.slides'),
@@ -287,6 +288,9 @@ const sliderShow = () => {
                 allowSwipe = true;
             }
 
+        },
+        closeSlider = function() {
+            openSlider.style.display = "none";
         };
 
     sliderTrack.style.transform = 'translate3d(0px, 0px, 0px)';
@@ -295,6 +299,7 @@ const sliderShow = () => {
     sliderTrack.addEventListener('transitionend', () => allowSwipe = true);
     slider.addEventListener('touchstart', swipeStart);
     slider.addEventListener('mousedown', swipeStart);
+    closeSlide.addEventListener('click', closeSlider);
 
     arrows.addEventListener('click', function() {
         let target = event.target;
