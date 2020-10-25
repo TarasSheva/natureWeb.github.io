@@ -3,7 +3,7 @@ let btn = document.querySelector('.menu_icon');
 let ul = document.querySelector('#ul');
 
 const showMenu = () => {
-    if (ul.style.display === "block" ) {
+    if (ul.style.display === "block") {
         ul.style.display = "none";
     } else {
         ul.style.display = "block";
@@ -17,7 +17,7 @@ const btn1 = document.querySelector('.to-video');
 const btn2 = document.querySelector('#btn2');
 
 const toCollection = () => {
-        document.location.href = 'collection.html';
+    document.location.href = 'collection.html';
 };
 const toVideo = (e) => {
     e.preventDefault();
@@ -81,7 +81,6 @@ if (heroBtn !== null) {
 // })
 
 
-
 // [].forEach.call(slider, function (el) {
 //     el.onclick = function () {
 //         windowSlider.style.display = 'block';
@@ -124,7 +123,8 @@ const slider = document.querySelectorAll(".card_item");
 
 const openSlider = document.querySelector('.slider_wrapp');
 
-const sliderShow = () => {
+
+const sliderShow = (numSl) => {
     let slider = document.querySelector('.slider'),
         closeSlide = slider.querySelector('.close'),
         sliderList = slider.querySelector('.card_slider'),
@@ -150,10 +150,11 @@ const sliderShow = () => {
         lastTrf = --slides.length * slideWidth,
         posThreshold = slides[0].offsetWidth * 0.35,
         trfRegExp = /([-0-9.]+(?=px))/,
-        getEvent = function() {
+        getEvent = function () {
             return (event.type.search('touch') !== -1) ? event.touches[0] : event;
         },
-        slide = function() {
+
+        slide = function () {
             if (transition) {
                 sliderTrack.style.transition = 'transform .5s';
             }
@@ -162,7 +163,7 @@ const sliderShow = () => {
             prev.classList.toggle('disabled', slideIndex === 0);
             next.classList.toggle('disabled', slideIndex === --slides.length);
         },
-        swipeStart = function() {
+        swipeStart = function () {
             let evt = getEvent();
 
             if (allowSwipe) {
@@ -186,7 +187,7 @@ const sliderShow = () => {
                 sliderList.classList.add('grabbing');
             }
         },
-        setTransform = function(transform, comapreTransform) {
+        setTransform = function (transform, comapreTransform) {
             if (transform >= comapreTransform) {
                 if (transform > comapreTransform) {
                     sliderTrack.style.transform = `translate3d(${comapreTransform}px, 0px, 0px)`;
@@ -194,12 +195,12 @@ const sliderShow = () => {
             }
             allowSwipe = false;
         },
-        reachEdge = function() {
+        reachEdge = function () {
             transition = false;
             swipeEnd();
             allowSwipe = true;
         },
-        swipeAction = function() {
+        swipeAction = function () {
 
             let evt = getEvent(),
                 style = sliderTrack.style.transform,
@@ -254,7 +255,7 @@ const sliderShow = () => {
             }
 
         },
-        swipeEnd = function() {
+        swipeEnd = function () {
             posFinal = posInit - posX1;
 
             isScroll = false;
@@ -289,7 +290,7 @@ const sliderShow = () => {
             }
 
         },
-        closeSlider = function() {
+        closeSlider = function () {
             openSlider.style.display = "none";
         };
 
@@ -301,7 +302,7 @@ const sliderShow = () => {
     slider.addEventListener('mousedown', swipeStart);
     closeSlide.addEventListener('click', closeSlider);
 
-    arrows.addEventListener('click', function() {
+    arrows.addEventListener('click', function () {
         let target = event.target;
 
         if (target.classList.contains('next')) {
@@ -314,13 +315,51 @@ const sliderShow = () => {
 
         slide();
     });
+    console.log(slides)
 };
+
 
 [].forEach.call(slider, function (element) {
     element.onclick = function () {
         openSlider.style.display = "block";
-        sliderShow();
+
+        let num = +(this.getAttribute('id'));
+        let numSl = `.slides${num}${num}${num}`;
+        sliderShow(numSl);
+
     }
 });
+let prb = document.querySelector(".proba");
+prb.addEventListener('click', Proba);
+
+function Proba (){
+    openSlider.style.display = "block";
+    return `
+        <div class="slider_wrapp">
+            <div class="slider_fon"></div>
+            <div class="slider">
+                <div class="card_slider">
+                    <div class="slider_track">
+                        <div class="slides"><img src="img/1/1.jpg" alt="" draggable="false"></div>
+                        <div class="slides"><img src="img/1/2.jpg" alt="" draggable="false"></div>
+                        <div class="slides"><img src="img/1/3.jpg" alt="" draggable="false"></div>
+                        <div class="slides"><img src="img/1/4.jpg" alt="" draggable="false"></div>
+                    </div>
+                    <!--                    <div class="slider_track">-->
+                    <!--                        <div class="slides"><img src="img/1/5.jpg" alt="" draggable="false"></div>-->
+                    <!--                        <div class="slides"><img src="img/1/6.jpg" alt="" draggable="false"></div>-->
+                    <!--                        <div class="slides"><img src="img/1/7.jpg" alt="" draggable="false"></div>-->
+                    <!--                        <div class="slides"><img src="img/1/8.jpg" alt="" draggable="false"></div>-->
+                    <!--                    </div>-->
+                </div>
+                <div class="slider_arrows">
+                    <a class="prev">&#10094</a>
+                    <a class="next">&#10095</a>
+                    <a class="close">&times;</a>
+                </div>
+            </div>
+        </div>
+    `;
+};
 
 
