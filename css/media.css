@@ -20,7 +20,9 @@
     .card_item {
         width: 40%;
     }
-
+    .cont_wrapp {
+        max-width: 600px;
+    }
 }
 
 
@@ -82,6 +84,9 @@
     .close {
         right: -70px;
     }
+    .cont_wrapp {
+        max-width: 400px;
+    }
 }
 @media screen and (max-width: 500px) {
     .header_container {
@@ -110,6 +115,9 @@
     .close {
         right: 0;
         top: -25px;
+    }
+    .cont_wrapp {
+        max-width: 350px;
     }
 }
 @media screen and (max-width: 470px) {
@@ -147,6 +155,13 @@
 
     .card_slider {
         width: 320px;
+    }
+    .cont_wrapp {
+        max-width: 250px;
+        font-size: 14px;
+    }
+    .footer-link-items {
+        width: 130px;
     }
 }
 

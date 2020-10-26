@@ -507,3 +507,7 @@ li:hover {
     background-repeat: no-repeat;
     background-position: center;
 }
+.cont_wrapp {
+    max-width: 700px;
+    margin: 60px auto;
+}

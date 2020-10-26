@@ -23,7 +23,6 @@ const toVideo = (e) => {
     e.preventDefault();
 
     const sectionId = btn1.getAttribute('id');
-    console.log(sectionId)
 
     document.querySelector(sectionId).scrollIntoView({
         behavior: 'smooth',
