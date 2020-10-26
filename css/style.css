@@ -128,7 +128,6 @@ li:hover {
     text-align: center;
     color: #fff;
     font-size: 60px;
-    margin-top: 0;
 }
 
 .fon_container > p {
@@ -391,116 +390,117 @@ li:hover {
 /*    z-index: 500;*/
 /*}*/
 
-.slider_wrapp {
-    display: none;
-}
-.slider_fon {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: black;
-    opacity: 0.5;
+/*.slider_wrapp {*/
+/*    display: none;*/
+/*}*/
+/*.slider_fon {*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    background: black;*/
+/*    opacity: 0.5;*/
+/*    width: 100%;*/
+/*    height: 100vh;*/
+/*    z-index: 450;*/
+/*}*/
+
+/*.slider {*/
+/*    position: fixed;*/
+/*    max-width: 640px;*/
+/*    max-height: 480px;*/
+/*    margin: 70px auto 0;*/
+/*    user-select: none;*/
+/*    touch-action: pan-y;*/
+/*    z-index: 500;*/
+/*    top: 0;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%);*/
+/*}*/
+
+/*.card_slider {*/
+/*    max-width: 640px;*/
+/*    max-height: 480px;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.card_slider.grab {*/
+/*    cursor: grab;*/
+/*}*/
+
+/*.card_slider.grabbing{*/
+/*    cursor: grabbing;*/
+/*}*/
+
+/*.slider_track1, .slider_track2 {*/
+/*    display: none;*/
+/*}*/
+
+/*.slides1, .slides2 {*/
+
+/*    max-width: 640px;*/
+/*    max-height: 480px;*/
+/*    !* Чтобы слайды не сжимались *!*/
+/*    flex-shrink: 0;*/
+/*    !* Увеличиваем и центрируем цифру внутри слайда *!*/
+/*    font-size: 50px;*/
+/*    display: none;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    border: 1px solid #000;*/
+/*}*/
+
+/*.slider_arrows {*/
+/*    margin-top: 15px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.next,*/
+/*.prev,*/
+/*.close {*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    transform: translate(0, -50%);*/
+/*    padding: 10px;*/
+/*    background: rgba(255,255,255, 0.6);*/
+/*    border: none;*/
+/*    margin: 0 10px;*/
+/*    font-size: 50px;*/
+/*    cursor: pointer;*/
+/*    color: black;*/
+/*}*/
+/*.prev {*/
+/*    border-radius: 0 10px 10px 0;*/
+/*    left: -10px;*/
+/*}*/
+/*.next {*/
+/*    border-radius: 10px 0 0 10px;*/
+/*    right: -10px;*/
+/*}*/
+/*.close {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    right: -10%;*/
+/*    padding: 0 10px;*/
+/*    border-radius: 10px;*/
+/*}*/
+
+/*.next.disabled,*/
+/*.prev.disabled {*/
+/*    opacity: .25;*/
+/*    pointer-events: none;*/
+/*}*/
+
+
+
+
+
+/******contacts*****/
+.contacts_wrap {
     width: 100%;
     height: 100vh;
-    z-index: 450;
-}
-
-.slider {
-    position: fixed;
-    max-width: 640px;
-    max-height: 480px;
-    margin: 70px auto 0;
-    user-select: none;
-    touch-action: pan-y;
-    z-index: 500;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-.card_slider {
-    max-width: 640px;
-    max-height: 480px;
-    overflow: hidden;
-}
-
-.card_slider.grab {
-    cursor: grab;
-}
-
-.card_slider.grabbing{
-    cursor: grabbing;
-}
-
-.slider_track {
-    display: flex;
-}
-
-.slides {
-    max-width: 640px;
-    max-height: 480px;
-    /* Чтобы слайды не сжимались */
-    flex-shrink: 0;
-    /* Увеличиваем и центрируем цифру внутри слайда */
-    font-size: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #000;
-}
-
-.slider_arrows {
-    margin-top: 15px;
-    text-align: center;
-}
-
-.next,
-.prev,
-.close {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    padding: 10px;
-    background: rgba(255,255,255, 0.6);
-    border: none;
-    margin: 0 10px;
-    font-size: 50px;
-    cursor: pointer;
-    color: black;
-}
-.prev {
-    border-radius: 0 10px 10px 0;
-    left: -10px;
-}
-.next {
-    border-radius: 10px 0 0 10px;
-    right: -10px;
-}
-.close {
-    position: absolute;
-    top: 0;
-    right: -10%;
-    padding: 0 10px;
-    border-radius: 10px;
-}
-
-.next.disabled,
-.prev.disabled {
-    opacity: .25;
-    pointer-events: none;
-}
-
-
-
-
-
-/******services*****/
-.ser_wrap {
-    width: 100%;
-    height: 100vh;
 
 }
-.ser_image {
+.contacts_image {
     height: 100%;
     background-image: url(../img/dubai.jpg);
     background-size: cover;
